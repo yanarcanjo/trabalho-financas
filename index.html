@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>GRUPO G</title>
+</head>
+<header>
+    <h1>Engenharia Econômica</h1>
+    <nav>
+        <a href="#membro">Membros</a>
+        <a href="#quest">Questões</a>
+    </nav>
+</header>
+<body id="corpo">
+    <div class="nomeGrupo">
+        <h2>GRUPO G</h2>  
+    </div>
+    <div class="membros" id="membro">
+        <div class="box">
+            <h3>MEMBROS</h3>
+            <p>Francisco Alexsandro Araújo</p>
+            <p>José Lucas Araújo de Lima</p>
+            <p>Victor Teixeira Lima</p>
+            <p>Wilner Lucas Firmino de França</p>
+            <p>Yan Lucas Franca Arcanjo</p>
+        </div>
+    </div>
+    <section class="quest" id="quest">
+        <h3>Questão: Capítulo 05</h3>
+        <p><strong>Q. 13</strong>. Um eletrodoméstico de $330 será pago dando-se uma entrada de 15% mais oito prestações mensais.
+            A juros efetivos de 5% a.m. calcular o valor das prestações na hipótese de serem:<br><br>a) postecipadas;<br>b) antecipadas;
+        </p>
+        <div class="form">
+            <label for="montante">Digite o valor total:</label>
+            <input autocomplete="off" type="text" id="montante">
+            <label for="porcentagemEntrada">Digite a porcentagem da entrada:</label>
+            <input autocomplete="off" type="text" id="porcentagemEntrada">
+            <label for="valorMeses">Digite a quantidade de meses:</label>
+            <input autocomplete="off" type="text" id="valorMeses">
+            <label for="valorJuros">Digite o valor do juros:</label>
+            <input autocomplete="off" type="text" id="valorJuros">
+        </div>
+        <button onclick="Questao13()">Responder</button>
+        <h3>Questão: Capítulo 08</h3>
+        <p><strong>Q. 12</strong>. Um empréstimo de $100.000 foi contratado a juros efetivos de 24% a.a. para ser pago em seis 
+            parcelas mensais postecipadas de acordo com o Sistema de Amortização Americano. O fundo 
+            de amortização do empréstimo terá depósitos mensais remunerados a juros efetivos de 20% a.a. 
+            Calcular:<br><br>a) os juros mensais;<br>b) as cotas do fundo de amortização;<br>c) os desencaixes;<br>d) o saldo do 
+            fundo de amortização após o sexto desencaixe;<br>e) os juros acumulados após o sexto desencaixe;<br>f) 
+            os desencaixes acumulados após o sexto mês;<br>g) a TIR (custo efetivo do financiamento).
+        </p>
+        <div class="form">
+            <label for="valorEmprestimo">Digite o valor do Empréstimo:</label>
+            <input autocomplete="off" type="text" step="any" id="valorEmprestimo">
+            <label for="valorTaxaEfetiva">Digite a taxa efetiva de juros:</label>
+            <input autocomplete="off" type="text" step="any" id="valorTaxaEfetiva">
+            <label for="valorTaxaDeFundo">Digite a taxa efetiva de fundo:</label>
+            <input autocomplete="off" type="text" step="any" id="valorTaxaDeFundo">
+            <label for="valorParcelas">Quantidade de parcelas:</label>
+            <input autocomplete="off" type="text" step="1" id="valorParcelas">
+        </div>
+        <button onclick="Questao12()">Responder</button>
+    </section>
+    
+
+</body>
+
+</html>
